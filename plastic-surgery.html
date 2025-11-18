@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Kimono - Photography Agency">
+    <meta name="author" content="">
+
+    <!-- Favicon and touch Icons -->
+    <link href="./assets/img/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="./assets/img/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="./assets/img/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="./assets/img/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Page Title -->
+    <title>Hampton Urology</title>
+
+    <!-- Styles Include -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+</head>
+
+
+<body class="theme-style--light">
+
+    <style>
+        .faq-section {
+            width: 100%;
+            max-width: 100%;
+            background: #fff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #2c2c2c;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            outline: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            cursor: pointer;
+            padding: 18px 0;
+            transition: color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: #e0a526;
+            /* coffee color accent */
+        }
+
+        .arrow {
+            transition: transform 0.3s ease;
+            font-size: 20px;
+            color: #e0a526;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease;
+            opacity: 0;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            padding: 0 0 15px 0;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            opacity: 1;
+        }
+
+        .faq-item.active .arrow {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active .faq-question {
+            color: #e0a526;
+        }
+    </style>
+
+
+
+
+
+
+    <!-- Preloader -->
+    <div id="preloader" style="background: #fff;">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <img src="./assets/rekha/logo111.png" alt="img">
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- pointer start -->
+    <div class="pointer bnz-pointer" id="bnz-pointer"></div>
+
+
+
+    <!-- Main Header -->
+    <header class="header">
+        <!-- Lower Bar -->
+        <div class="header-inner">
+            <div class="container-fluid pe-0">
+                <div class="d-flex align-items-center justify-content-between">
+                    <!-- Left Part -->
+                    <div class="header_left_part d-flex align-items-center">
+                        <div class="logo">
+                            <a href="index.html" class="light_logo"><img src="./assets/rekha/logo111.png" width="200px"
+                                    height="200px" alt="logo"></a>
+                            <a href="index.html" class="dark_logo"><img src="./assets/rekha/logo111.png" width="200px"
+                                    height="200px" alt="logo"></a>
+                        </div>
+                    </div>
+
+                    <!-- Center Part -->
+                    <div class="header_center_part d-none d-xl-block">
+                        <div class="mainnav">
+                            <ul class="main-menu">
+                                <li class="menu-item"><a href="index.html">Home</a></li>
+                                <li class="menu-item"><a href="about.html">About Us</a></li>
+                                <li class="menu-item"><a href="specialities.html">Specialities</a></li>
+                                <li class="menu-item menu-item-has-children"><a href="facilities.html">Facilities</a>
+                                    <ul class="sub-menu" data-lenis-prevent>
+                                        <li class="menu-item"><a href="facilities.html#sc">Surgical care</a></li>
+                                        <li class="menu-item"><a href="facilities.html#uy">Ultrasonography </a></li>
+                                        <li class="menu-item"><a href="facilities.html#ur">Uroflowmetry</a></li>
+                                        <li class="menu-item"><a href="facilities.html#ec">Emergency care</a></li>
+                                        <li class="menu-item"><a href="facilities.html#ic">ICU</a></li>
+                                        <li class="menu-item"><a href="facilities.html#la">Laboratory</a></li>
+                                        <li class="menu-item"><a href="facilities.html#ph">Pharmacy</a></li>
+                                        <li class="menu-item"><a href="facilities.html#xr">X ray </a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="doctors.html">Doctors</a></li>
+                                <li class="menu-item"><a href="blog.html">Blogs</a></li>
+                                <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right Part -->
+                    <div class="header_right_part d-flex align-items-center">
+
+                        <a class="btn btn-two creative header-top-btn" href="#" data-bs-toggle="modal"
+                            data-bs-target="#appointmentModal">
+                            <span class="btn-wrap">
+                                <span class="text-first">Get Appointment</span>
+                                <span class="text-second"> <i class="bi bi-arrow-up-right"></i> <i
+                                        class="bi bi-arrow-up-right"></i> </span>
+                            </span>
+                        </a>
+
+                        <button type="button" class="mr_menu_toggle wptb-element d-xl-none">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Main Header -->
+
+    <!-- Mobile Responsive Menu -->
+    <div class="mr_menu" data-lenis-prevent>
+        <button type="button" class="mr_menu_close"><i class="bi bi-x-lg"></i></button>
+        <div class="logo"></div> <!-- Keep this div empty. Logo will come here by JavaScript -->
+
+        <h6>Menu</h6>
+        <div class="mr_navmenu"></div> <!-- Keep this div empty. Menu will come here by JavaScript -->
+
+        <h6>Contact Us</h6>
+        <div class="wptb-icon-box1 style2">
+            <div class="wptb-item--inner flex-start">
+                <div class="wptb-item--icon"><i class="bi bi-envelope"></i></div>
+                <div class="wptb-item--holder">
+                    <p class="wptb-item--description"><a href="mailto:kimocare@gmail.com">kimocare@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wptb-icon-box1 style2">
+            <div class="wptb-item--inner flex-start">
+                <div class="wptb-item--icon"><i class="bi bi-geo-alt"></i></div>
+                <div class="wptb-item--holder">
+                    <p class="wptb-item--description"><a href="contact-1.html">28 Street, New York, USA</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wptb-icon-box1 style2">
+            <div class="wptb-item--inner flex-start">
+                <div class="wptb-item--icon"><i class="bi bi-envelope"></i></div>
+                <div class="wptb-item--holder">
+                    <p class="wptb-item--description"><a href="tel:+98765432122811">(+987) 654 321 228 11</a></p>
+                </div>
+            </div>
+        </div>
+
+        <h6>Find Our Page</h6>
+        <div class="social-box">
+            <ul>
+                <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="https://www.behance.com/"><i class="bi bi-behance"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="aside_info_wrapper" data-lenis-prevent>
+        <button class="aside_close">Close <i class="bi bi-x-lg"></i></button>
+
+        <div class="aside_logo logo">
+            <a href="index.html" class="light_logo"><img src="./assets/img/logo.svg" alt="logo"></a>
+            <a href="index.html" class="dark_logo"><img src="./assets/img/logo-dark.svg" alt="logo"></a>
+        </div>
+
+        <div class="aside_info_inner">
+
+            <h6>// Instagram</h6>
+            <div class="insta-logo">
+                <i class="bi bi-instagram"></i> studio_kimono
+            </div>
+            <div class="wptb-instagram--gallery">
+                <div class="wptb-item--inner d-flex align-items-center justify-content-center flex-wrap">
+                    <div class="wptb-item">
+                        <div class="wptb-item--image">
+                            <img src="./assets/img/instagram/6.jpg" alt="img">
+                        </div>
+                    </div>
+
+                    <div class="wptb-item">
+                        <div class="wptb-item--image">
+                            <img src="./assets/img/instagram/7.jpg" alt="img">
+                        </div>
+                    </div>
+
+                    <div class="wptb-item">
+                        <div class="wptb-item--image">
+                            <img src="./assets/img/instagram/8.jpg" alt="img">
+                        </div>
+                    </div>
+
+                    <div class="wptb-item">
+                        <div class="wptb-item--image">
+                            <img src="./assets/img/instagram/9.jpg" alt="img">
+                        </div>
+                    </div>
+
+                    <div class="wptb-item">
+                        <div class="wptb-item--image">
+                            <img src="./assets/img/instagram/10.jpg" alt="img">
+                        </div>
+                    </div>
+
+                    <div class="wptb-item">
+                        <div class="wptb-item--image">
+                            <img src="./assets/img/instagram/11.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="wptb-icon-box1 style2">
+                <div class="wptb-item--inner flex-start">
+                    <div class="wptb-item--icon"><i class="bi bi-envelope"></i></div>
+                    <div class="wptb-item--holder">
+                        <p class="wptb-item--description"><a href="mailto:kimocare@gmail.com">kimocare@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wptb-icon-box1 style2">
+                <div class="wptb-item--inner flex-start">
+                    <div class="wptb-item--icon"><i class="bi bi-geo-alt"></i></div>
+                    <div class="wptb-item--holder">
+                        <p class="wptb-item--description"><a href="contact-1.html">28 Street, New York, USA</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wptb-icon-box1 style2">
+                <div class="wptb-item--inner flex-start">
+                    <div class="wptb-item--icon"><i class="bi bi-envelope"></i></div>
+                    <div class="wptb-item--holder">
+                        <p class="wptb-item--description"><a href="tel:+98765432122811">(+987) 654 321 228 11</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <h6>// Follow Us</h6>
+            <div class="social-box style-square">
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.behance.com/"><i class="bi bi-behance"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Search -->
+    <div class="search-modal">
+        <div class="modal fade" id="modalSearch">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="search_overlay">
+                        <form class="credential-form" method="post">
+                            <div class="form-group">
+                                <input type="text" name="search" class="keyword form-control" placeholder="Search Here">
+                            </div>
+                            <button type="submit" class="btn-search">
+                                <span class="text-first"> <i class="bi bi-arrow-right"></i> </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Wrapper-->
+    <main class="wrapper">
+        <!-- Page Header -->
+        <div class="wptb-page-heading">
+            <div class="wptb-item--inner">
+                <div class="wptb-item-layer wptb-item-layer-one">
+                    <img src="./assets/img/more/circle.png" alt="img">
+                </div>
+                <h2 class="wptb-item--title ">Plastic Surgery</h2>
+            </div>
+        </div>
+
+        <!-- Details Content -->
+        <section class="blog-details">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Service Navigation List -->
+                     <div class="col-lg-4 col-md-4 pe-md-5">
+                        <div class="sidebar">
+                            <div class="sidenav">
+                                <ul class="side_menu">
+
+                                     <li class="menu-item ">
+                                        <a href="urology.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                               Urology
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item ">
+                                        <a href="cardiology.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                               Cardiology
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="general-surgery.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                                General Surgery
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+
+                                    
+
+                                    <li class="menu-item">
+                                        <a href="paediatric-surgery.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                               Paediatric Surgery
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="vascular-surgery.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                                Vascular Surgery
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+
+                                     <li class="menu-item">
+                                        <a href="general-medicine.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                               General Medicine
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                     <li class="menu-item">
+                                        <a href="paediatrics.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                               Paediatrics
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                     <li class="menu-item">
+                                        <a href="dermatology.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                               Dermatology
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                     <li class="menu-item">
+                                        <a href="orthopaedics.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                               Orthopaedics
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                     <li class="menu-item">
+                                        <a href="radiology.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                               Radiology
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                     <li class="menu-item">
+                                        <a href="pulmonology.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                                Pulmonology
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                     <li class="menu-item">
+                                        <a href="psychiatry.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                               Psychiatry
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                     <li class="menu-item">
+                                        <a href="nephrology.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                               Nephrology
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                     <li class="menu-item">
+                                        <a href="oncology.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                               Oncology
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                     <li class="menu-item">
+                                        <a href="neurology.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                              Neurology
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                     <li class="menu-item">
+                                        <a href="gastroenterology.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                              Gastroenterology
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                     <li class="menu-item">
+                                        <a href="obstetrics.html"
+                                            class="d-flex align-items-center justify-content-between">
+                                            <span>
+                                              Obstetrics and Gynaecology
+                                            </span>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 col-md-8 mb-5 mb-md-0 ps-md-0">
+                        <div class="blog-details-inner">
+                            <div class="post-content">
+
+                                <!-- Post Image -->
+                                <figure class="block-gallery mb-4">
+                                    <img src="../assets/img/services/a12.jpg" alt="img" class="bor">
+                                </figure>
+
+                                <div class="post-header">
+                                    <h1 class="post-title">Plastic Surgery</h1>
+                                </div>
+                                <div class="fulltext">
+                                    <p> The talent at kimono runs wide and deep. Across many markets, geographies &
+                                        typologies, our team members are some of the finest professionals in the
+                                        industry wide and deep. Across many markets, geographies and typologies, our
+                                        team members are some of the finest.</p>
+
+                                    <!-- Start Section -->
+                                    <h4 class="widget-title">Service Steps</h4>
+                                    <p>The talent at kimono runs wide and deep. Across many markets, geographies &
+                                        typologies, our team members are some of the finest professionals in the
+                                        industry wide and deep. </p>
+
+                                    <ul class="point-order">
+                                        <li><i class="bi bi-check2-all"></i> The talent at Kimono runs wide and deep.
+                                            Across many markets, geographies</li>
+                                        <li><i class="bi bi-check2-all"></i> Our team members are some of the finest
+                                            professionals in the industry</li>
+                                        <li><i class="bi bi-check2-all"></i> Organized to deliver the most specialized
+                                            service possible and enriched by the</li>
+                                    </ul>
+
+                                    <p>The talent at kimono runs wide and deep. Across many markets, geographies &
+                                        typologies, our team members are some of the finest professionals in the
+                                        industry wide and deep. Across many markets, geographies and typologies, our
+                                        team members are some of the finest.</p>
+                                    <p>The talent at kimono runs wide and deep. Across many markets, geographies &
+                                        typologies, our team members are some of the finest professionals in the
+                                        industry wide and deep. Across many markets, geographies and typologies, our
+                                        team members are some of the finest.The talent at kimora runs wide and deep.
+                                        Across many markets, geographies & typologies, our team members are some of the
+                                        finest professionals in the industry wide and deep. Across many markets,
+                                        geographies and typologies, our team members are some of the finest.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+          <section class="wptb-services-one about-page-padd">
+            
+            <div class="container">
+                <div class="row">
+                   <div class="row">
+                       
+
+                        <div class="col-lg-6 col-sm-6 mb-4 mb-lg-0">
+                            <div class="wptb-image-single wow fadeInUp">
+                                <div class="wptb-item--inner">
+                                    <div class="wptb-item--image">
+                                        <a href="project-details.html"></a><img src="../assets/img/services/a10.jpg" alt="img" class="bor">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-6 mb-4 mb-lg-0">
+                            <div class="wptb-image-single wow fadeInUp">
+                                <div class="wptb-item--inner">
+                                    <div class="wptb-item--image">
+                                        <a href="project-details.html"></a><img src="../assets/img/services/a11.jpg" alt="img" class="bor">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container" style="margin-top: 70px; margin-bottom: 70px;">
+            <section class="faq-section">
+
+                <div class="row">
+                    <h2>Frequently Asked Questions</h2>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>1. What makes our coffee special?</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our coffee is made from premium organic beans, roasted in small batches to ensure rich
+                                flavor and
+                                freshness in every sip.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>2. How should I store the coffee powder?</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Store your coffee powder in an airtight container, away from sunlight and moisture, to
+                                retain its
+                                aroma and taste.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>3. Do you ship internationally?</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! We ship worldwide through reliable courier partners with real-time tracking for
+                                every order.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>4. Can I return a product?</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Returns are accepted within 7 days for unused and sealed items. Please read our return
+                                policy
+                                before requesting one.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+         <section class="wptb-funfacts--area  ppp " style="background-color:#e0a526;">
+
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-12 mb-5 mb-md-0">
+                        <div class="wptb-counter1 style1 pd-right-60 position-relative z-index-3 wow skewIn">
+                            <div class="d-flex" style="justify-content: space-between; align-items: center;">
+                                <h3> Free Doctor Consulatation </h3>
+
+                                <a class="btn1 btn-two creative header-top-btn" href="#">
+                                    <span class="btn-wrap">
+                                        <span class="text-first">Get Appointment</span>
+                                        <span class="text-second"> <i class="bi bi-arrow-up-right"></i> <i
+                                                class="bi bi-arrow-up-right"></i> </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section>
+
+      
+        <!-- End Details Content -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer style1 bg-image-2" style="background-image: url('./assets/rekha/ff.jpg');">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer--inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-5 mb-md-0">
+                            <div class="footer-widget mt">
+                                <div class="footer-nav ">
+                                    <ul>
+                                        <li class="menu-item"><a href="about.html" style="color: #262626;">About Us</a>
+                                        </li>
+                                        <li class="menu-item"><a href="specialities.html"
+                                                style="color: #262626;">Specialities</a></li>
+                                        <li class="menu-item"><a href="facilities.html"
+                                                style="color: #262626;">Facilities</a></li>
+                                        <li class="menu-item"><a href="doctors.html" style="color: #262626;">Doctors</a>
+                                        </li>
+                                        <li class="menu-item"><a href="blog.html" style="color: #262626;">Blogs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 mb-5 mb-md-0 order-1 order-md-0 text-center">
+                            <div class="footer-widget d-flex justify-content-center" style="gap: 40px;">
+
+                                <div class="logo mr-bottom-20">
+                                    <a href="index.html" class="" style="width: 150px;"><img
+                                            src="./assets/rekha/footer-logo-11.png" alt="logo" width="150px"></a>
+                                </div>
+                                <div class=" logo mr-bottom-20">
+                                    <a href="index.html" class="" style="width: 150px;"><img
+                                            src="./assets/rekha/footer-logo-1.png" alt="logo" width="150px"></a>
+                                </div>
+
+
+                            </div>
+                            <h6 class="widget-title">Mathuram Nagar,
+                                Iyyappanthangal,
+                                Chennai - 600 056. <br> Email: <span style="text-transform: lowercase;">
+                                    rekharsi133@gmail.com</span><br>Mobile NO: 6382755431</h6>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-5 mb-md-0">
+                            <div class="footer-widget text-md-end mt">
+                                <div class="footer-nav">
+                                    <ul>
+                                        <li class="menu-item"><a href="#" style="color: #262626;">Urology</a></li>
+                                        <li class="menu-item"><a href="#" style="color: #262626;">Urology</a></li>
+                                        <li class="menu-item"><a href="#" style="color: #262626;">Urology
+                                            </a></li>
+                                        <li class="menu-item"><a href="#" style="color: #262626;">Urology
+                                            </a></li>
+                                        <li class="menu-item"><a href="#" style="color: #262626;">Urology
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Part -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <div class="copyright">
+                        <p style="color: #262626;">Copyright © 2025 All Rights Reserved |Desinged By <a
+                                href="https://dodoinfotech.com/" target="_blank" style="color: #262626;"> Dodo
+                                Infotech</a> </p>
+                    </div>
+                    <div class="social-box style-oval">
+                        <ul>
+                            <li><a href="https://www.facebook.com/" class="bi bi-facebook"></a></li>
+                            <li><a href="https://www.instagram.com/" class="bi bi-instagram"></a></li>
+                            <li><a href="https://www.linkedin.com/" class="bi bi-linkedin"></a></li>
+                            <li><a href="https://www.youtube.com/" class="bi bi-youtube"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="totop">
+        <a href="#"><i class="bi bi-chevron-up"></i></a>
+    </div>
+
+
+    <!-- Core JS -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Framework -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- WOW Scroll Effect -->
+    <script src="./plugins/wow/wow.min.js"></script>
+
+    <!-- Swiper Slider -->
+    <script src="./plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="./plugins/swiper/swiper-gl.min.js"></script>
+
+    <!-- Odometer Counter -->
+    <script src="./plugins/odometer/appear.js"></script>
+    <script src="./plugins/odometer/odometer.js"></script>
+
+    <!-- Fancybox -->
+    <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+
+    <!-- Flatpickr -->
+    <script src="./plugins/flatpickr/flatpickr.min.js"></script>
+
+    <!-- Nice Select -->
+    <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+
+
+
+    <!-- Cursor Effect -->
+    <script src="./plugins/cursor-effect/cursor-effect.js"></script>
+
+    <!-- Theme Custom JS -->
+    <script src="./assets/js/theme.js"></script>
+
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach((item) => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                // Close all other FAQs
+                faqItems.forEach((faq) => {
+                    if (faq !== item) faq.classList.remove('active');
+                });
+
+                // Toggle current one
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+
+
+
+</html>
